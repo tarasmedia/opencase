@@ -23,7 +23,7 @@
                                             </span>
     </header>
     <div class="panel-body">
-        <a href="/admin?type=clearcache" class="btn btn-md btn-block btn-success">Отчистить кэш</a>
+        <a href="/admin?type=clearcache" class="btn btn-md btn-block btn-success">Очистить кэш</a>
     </div>
     <header class="panel-heading">
         Настройка бота
