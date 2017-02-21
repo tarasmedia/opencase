@@ -30,7 +30,7 @@ class PlayController extends \Phalcon\Mvc\Controller
             if (($case->price * 5 > $case->profit and $item->price > $case->price) || ($item->price > $case->price * 3 and $item->price < $case->price)) continue;
             $items[] = $item;
         }
-        if(empty($itmes)) return $this->response->setJsonContent(['status' => 'error', 'msg' => '<div><div><strong>Ошибка</strong><br>В данный момент на ботах нет вещей для выбранного кейса. Попробуйте позже.</div></div>']);
+       // if(empty($itmes)) return $this->response->setJsonContent(['status' => 'error', 'msg' => '<div><div><strong>Ошибка</strong><br>В данный момент на ботах нет вещей для выбранного кейса. Попробуйте позже.</div></div>']);
         shuffle($items);
         $item = $items[0];
         $game = new Games();
